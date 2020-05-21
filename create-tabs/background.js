@@ -1,4 +1,3 @@
-chrome.browserAction.onClicked.addListener(function(){})
-chrome.tabs.create({url:'https://www.google.com'},function(data){
-    console.log(data)
+chrome.browserAction.onClicked.addListener(function(){
+    chrome.tabs.create({url: chrome.extension.getURL('html.html')})
 })
